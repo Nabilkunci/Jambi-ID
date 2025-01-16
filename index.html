@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kota Jambi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-900 text-yellow-500">
+
+  <!-- Header & Navbar -->
+  <header class="bg-green-900 text-yellow-500">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="text-xl font-bold">
+        Kota Jambi
+      </div>
+
+      <!-- Navbar (Desktop) -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#about" class="hover:text-yellow-300">Tentang</a>
+        <a href="#kuliner" class="hover:text-yellow-300">Kuliner</a>
+        <a href="#tarian" class="hover:text-yellow-300">Tarian</a>
+        <a href="#gallery" class="hover:text-yellow-300">Galeri</a>
+        <a href="#contact" class="hover:text-yellow-300">Kontak</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-green-800 text-yellow-500">
+      <a href="#about" class="block py-2 px-4 hover:bg-green-700 hover:text-yellow-300">Tentang</a>
+      <a href="#kuliner" class="block py-2 px-4 hover:bg-green-700 hover:text-yellow-300">Kuliner</a>
+      <a href="#tarian" class="block py-2 px-4 hover:bg-green-700 hover:text-yellow-300">Tarian</a>
+      <a href="#gallery" class="block py-2 px-4 hover:bg-green-700 hover:text-yellow-300">Galeri</a>
+      <a href="#contact" class="block py-2 px-4 hover:bg-green-700 hover:text-yellow-300">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-green-900 text-yellow-500">
+    <div class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
+      <div class="text-center md:text-left md:w-1/2">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          Selamat Datang di Kota Jambi
+        </h1>
+        <p class="text-lg mb-6">
+          Jelajahi pesona budaya, keindahan alam, dan kekayaan kuliner khas Kota Jambi. 
+          Temukan pengalaman yang tak terlupakan!
+        </p>
+        <a href="#about" class="bg-yellow-500 text-green-900 px-6 py-3 rounded-lg shadow-md hover:bg-yellow-400">
+          Pelajari Lebih Lanjut
+        </a>
+      </div>
+      <div class="md:w-1/2 mt-10 md:mt-0">
+        <img src="src/img/hero-jambi.jpg" alt="Kota Jambi" class="w-full rounded-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="bg-green-800 text-yellow-500 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Tim Kami</h2>
+
+      <!-- Grid Team Members -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Member -->
+        <div class="bg-green-900 p-6 rounded-lg shadow-md text-center">
+          <img src="src/img/reja.jpg" alt="Member 1" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <h3 class="text-2xl font-bold mb-2">Muhammad Alfiansyah Reza</h3>
+          <p class="text-yellow-300 italic mb-4">Ketua Kelompok</p>
+          <p class="text-sm mb-4">Memimpin kelompok agar bekerja aktif dan produktif.</p>
+          <a href="src/cv/CVREJA.pdf" download class="bg-yellow-500 text-green-900 px-4 py-2 rounded-lg shadow-md hover:bg-yellow-400">
+            Download CV
+          </a>
+        </div>
+
+        <!-- Member -->
+        <div class="bg-green-900 p-6 rounded-lg shadow-md text-center">
+          <img src="src/img/sipa.jpg" alt="Member 2" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <h3 class="text-2xl font-bold mb-2">Siti Syifa Aulia</h3>
+          <p class="text-yellow-300 italic mb-4">Wakil Kelompok</p>
+          <p class="text-sm mb-4">Sebagai Wakil ketua dan sebagai pengganti tanggung jawab di kelompok.</p>
+          <a href="src/cv/CVSYIFA.pdf" download class="bg-yellow-500 text-green-900 px-4 py-2 rounded-lg shadow-md hover:bg-yellow-400">
+            Download CV
+          </a>
+        </div>
+
+        <!-- Member -->
+        <div class="bg-green-900 p-6 rounded-lg shadow-md text-center">
+          <img src="src/img/yasmin.jpg" alt="Member 4" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <h3 class="text-2xl font-bold mb-2">Yazmien Meilandri Purana</h3>
+          <p class="text-yellow-300 italic mb-4">Dokumentator</p>
+          <p class="text-sm mb-4">Dokumentator untuk membuat laporan Agar dapat di publikasi.</p>
+          <a href="src/cv/CVYAZMIN.pdf" download class="bg-yellow-500 text-green-900 px-4 py-2 rounded-lg shadow-md hover:bg-yellow-400">
+            Download CV
+          </a>
+        </div>
+         
+        <!-- Member -->
+        <div class="bg-green-900 p-6 rounded-lg shadow-md text-center">
+          <img src="src/img/fais.jpg" alt="Member 3" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <h3 class="text-2xl font-bold mb-2">Muhammad Fais Habibi</h3>
+          <p class="text-yellow-300 italic mb-4">Presentator</p>
+          <p class="text-sm mb-4">Yang akan memaparkan tentang kota jambi.</p>
+          <a href="src/cv/CVFAIS.pdf" download class="bg-yellow-500 text-green-900 px-4 py-2 rounded-lg shadow-md hover:bg-yellow-400">
+            Download CV
+          </a>
+        </div>
+
+        <!-- Member -->
+        <div class="bg-green-900 p-6 rounded-lg shadow-md text-center">
+          <img src="src/img/rafiki.jpg" alt="Member 5" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <h3 class="text-2xl font-bold mb-2">Muhammad Rafiqi</h3>
+          <p class="text-yellow-300 italic mb-4">Moderator</p>
+          <p class="text-sm mb-4">Mengolah data untuk mendukung pengambilan keputusan berbasis fakta.</p>
+          <a href="src/cv/CVRAFIKI.pdf" download class="bg-yellow-500 text-green-900 px-4 py-2 rounded-lg shadow-md hover:bg-yellow-400">
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visi dan Misi Section -->
+  <section id="visi-misi" class="bg-green-800 text-yellow-500 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Visi dan Misi</h2>
+
+      <!-- Visi -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-bold mb-4 flex items-center">
+          <i class="fa-solid fa-eye text-yellow-400 mr-2"></i> Visi
+        </h3>
+        <p class="text-lg italic border-l-4 border-yellow-400 pl-4">
+          "Mempertahankan dan mengembangkan warisan budaya Sumatera Tengah untuk generasi mendatang."
+        </p>
+      </div>
+
+      <!-- Misi -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4 flex items-center">
+          <i class="fa-solid fa-bullseye text-yellow-400 mr-2"></i> Misi
+        </h3>
+        <ul class="space-y-4 text-lg">
+          <li class="flex items-start">
+            <i class="fa-solid fa-check text-yellow-400 mr-3 mt-1"></i>
+            Meningkatkan kualitas pendidikan pengetahuan manusia.
+          </li>
+          <li class="flex items-start">
+            <i class="fa-solid fa-check text-yellow-400 mr-3 mt-1"></i>
+            Mengembangkan bakat dan minat anggota komunitas dalam berbagai jenis seni, seperti musik, tari, teater, sastra, film, fotografi, dan lainnya.
+          </li>
+          <li class="flex items-start">
+            <i class="fa-solid fa-check text-yellow-400 mr-3 mt-1"></i>
+            Melestarikan warisan budaya dan tradisi lokal.
+          </li>
+          <li class="flex items-start">
+            <i class="fa-solid fa-check text-yellow-400 mr-3 mt-1"></i>
+            Meningkatkan apresiasi generasi muda dalam mencintai kebudayaan dan mampu berkarya secara kreatif.
+          </li>
+          <li class="flex items-start">
+            <i class="fa-solid fa-check text-yellow-400 mr-3 mt-1"></i>
+            Menjaga kelestarian lingkungan hidup untuk generasi mendatang.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-green-900 text-yellow-500 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Tentang Kota Jambi</h2>
+      <p class="text-center text-lg max-w-3xl mx-auto mb-8">
+        Kota Jambi adalah ibu kota Provinsi Jambi yang terkenal dengan Sungai Batanghari, situs bersejarah seperti Candi Muaro Jambi, dan keanekaragaman budaya. Kota ini menjadi pusat kegiatan ekonomi dan kebudayaan yang terus berkembang.
+      </p>
+      <div class="flex flex-wrap justify-center">
+        <div class="w-full md:w-1/3 p-4">
+          <div class="bg-green-800 p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold mb-4">Budaya</h3>
+            <p>Kota Jambi kaya dengan tradisi lokal yang mencakup seni tari, musik, dan kerajinan tangan khas Melayu.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-4">
+          <div class="bg-green-800 p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold mb-4">Sejarah</h3>
+            <p>Sejarah Kota Jambi tercermin dalam warisan budaya seperti Candi Muaro Jambi, salah satu kompleks candi terbesar di Asia Tenggara.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-4">
+          <div class="bg-green-800 p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold mb-4">Pariwisata</h3>
+            <p>Destinasi wisata alam, budaya, dan sejarah menjadikan Jambi tujuan favorit para wisatawan.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- Jumlah Penduduk -->
+          <div class="bg-green-900 p-6 rounded-lg text-center">
+            <i class="fa-solid fa-users text-yellow-500 text-4xl mb-4"></i>
+            <h3 class="text-2xl font-bold mb-2">Jumlah Penduduk</h3>
+            <p class="text-lg">3,500,000</p> <!-- Ganti dengan jumlah penduduk yang sesuai -->
+          </div>
+
+          <!-- Jumlah Kabupaten -->
+          <div class="bg-green-900 p-6 rounded-lg text-center">
+            <i class="fa-solid fa-city text-yellow-500 text-4xl mb-4"></i>
+            <h3 class="text-2xl font-bold mb-2">Jumlah Kabupaten</h3>
+            <p class="text-lg">11 Kabupaten</p> <!-- Ganti dengan jumlah kabupaten yang sesuai -->
+          </div>
+
+          <!-- Jumlah Tempat Wisata -->
+          <div class="bg-green-900 p-6 rounded-lg text-center">
+            <i class="fa-solid fa-map-signs text-yellow-500 text-4xl mb-4"></i>
+            <h3 class="text-2xl font-bold mb-2">Jumlah Tempat Wisata</h3>
+            <p class="text-lg">25 Tempat Wisata</p> <!-- Ganti dengan jumlah tempat wisata yang sesuai -->
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Kuliner Tradisi & Adat Section -->
+  <section id="kuliner-tradisi-adat" class="bg-green-800 text-yellow-500 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Kuliner Tradisi & Adat Kota Jambi</h2>
+
+      <!-- Kuliner -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-green-900 p-6 rounded-lg shadow-md text-center">
+          <i class="fa-solid fa-utensils text-yellow-500 text-4xl mb-4"></i>
+          <h3 class="text-2xl font-bold mb-4">Kuliner Khas</h3>
+          <p class="text-lg">Kota Jambi terkenal dengan kuliner tradisionalnya, seperti "Soto Jambi", "Tempoyak", dan "Rendang Jambi". Makanan khas ini mencerminkan keanekaragaman rasa yang unik dan lezat.</p>
+        </div>
+
+        <!-- Tradisi -->
+        <div class="bg-green-900 p-6 rounded-lg shadow-md text-center">
+          <i class="fa-solid fa-theater-masks text-yellow-500 text-4xl mb-4"></i>
+          <h3 class="text-2xl font-bold mb-4">Tradisi</h3>
+          <p class="text-lg">Tradisi di Kota Jambi sangat kaya, termasuk upacara "Mandi Safar", yang dilaksanakan untuk menyambut bulan Safar dengan berbagai ritual adat yang menarik.</p>
+        </div>
+
+        <!-- Adat -->
+        <div class="bg-green-900 p-6 rounded-lg shadow-md text-center">
+          <i class="fa-solid fa-people-arrows text-yellow-500 text-4xl mb-4"></i>
+          <h3 class="text-2xl font-bold mb-4">Adat Istiadat</h3>
+          <p class="text-lg">Adat istiadat di Kota Jambi sangat erat kaitannya dengan kehidupan sehari-hari, seperti adat "Pelepasan Hantu Laut", yang merupakan tradisi untuk menjaga keseimbangan alam dan kehidupan masyarakat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Foto Kuliner & Tempat Wisata Section -->
+  <section id="kuliner-wisata" class="bg-green-800 text-yellow-500 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Kuliner & Tempat Wisata</h2>
+
+      <!-- Foto Kuliner -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-bold mb-4 text-center">Kuliner Kota Jambi</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="bg-green-900 rounded-lg overflow-hidden shadow-lg">
+            <img src="src/img/soto-jambi.jpg" alt="Soto Jambi" class="w-full h-56 object-cover mb-4">
+            <p class="text-center text-lg text-yellow-300 py-2">Soto Jambi</p>
+          </div>
+          <div class="bg-green-900 rounded-lg overflow-hidden shadow-lg">
+            <img src="src/img/tempoyak.jpg" alt="Tempoyak" class="w-full h-56 object-cover mb-4">
+            <p class="text-center text-lg text-yellow-300 py-2">Tempoyak</p>
+          </div>
+          <div class="bg-green-900 rounded-lg overflow-hidden shadow-lg">
+            <img src="src/img/rendang-cempedak.jpg" alt="Rendang Jambi" class="w-full h-56 object-cover mb-4">
+            <p class="text-center text-lg text-yellow-300 py-2">Rendang Jambi</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tempat Wisata -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-center">Tempat Wisata Kota Jambi</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="bg-green-900 rounded-lg overflow-hidden shadow-lg">
+            <img src="src/img/danau-kerinci.jpg" alt="Danau Kerinci" class="w-full h-56 object-cover mb-4">
+            <p class="text-center text-lg text-yellow-300 py-2">Danau Kerinci</p>
+          </div>
+          <div class="bg-green-900 rounded-lg overflow-hidden shadow-lg">
+            <img src="src/img/hutanjambi.jpg" alt="Taman Hutan Rayap" class="w-full h-56 object-cover mb-4">
+            <p class="text-center text-lg text-yellow-300 py-2">Taman Hutan Rayap</p>
+          </div>
+          <div class="bg-green-900 rounded-lg overflow-hidden shadow-lg">
+            <img src="src/img/candijambi.jpg" alt="Candi Muaro Jambi" class="w-full h-56 object-cover mb-4">
+            <p class="text-center text-lg text-yellow-300 py-2">Candi Muaro Jambi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kerajinan Tangan Section -->
+  <section id="kerajinan-tangan" class="bg-green-800 text-yellow-500 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Kerajinan Tangan Kota Jambi</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Kerajinan 1 -->
+        <div class="bg-green-900 p-6 rounded-lg shadow-md text-center">
+          <img src="src/img/anyamanbambu.jpg" alt="Anyaman Bambu" class="w-full h-40 object-cover mb-4">
+          <h3 class="text-2xl font-bold mb-2">Anyaman Bambu</h3>
+          <p class="text-lg">Anyaman bambu merupakan salah satu kerajinan tangan khas yang dibuat dengan tangan terampil masyarakat Jambi.</p>
+        </div>
+
+        <!-- Kerajinan 2 -->
+        <div class="bg-green-900 p-6 rounded-lg shadow-md text-center">
+          <img src="src/img/kerajinan-perak.jpg" alt="Kerajinan Perak" class="w-full h-40 object-cover mb-4">
+          <h3 class="text-2xl font-bold mb-2">Kerajinan Perak</h3>
+          <p class="text-lg">Kerajinan perak khas Jambi sangat terkenal dan digunakan dalam berbagai aksesoris seperti kalung, cincin, dan gelang.</p>
+        </div>
+
+        <!-- Kerajinan 3 -->
+        <div class="bg-green-900 p-6 rounded-lg shadow-md text-center">
+          <img src="src/img/batikjambi.jpg" alt="Batik Jambi" class="w-full h-40 object-cover mb-4">
+          <h3 class="text-2xl font-bold mb-2">Batik Jambi</h3>
+          <p class="text-lg">Batik Jambi memiliki motif yang khas, menggabungkan elemen tradisional dan modern yang bernilai seni tinggi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Video Jambi Section -->
+  <section id="video-jambi" class="bg-green-800 text-yellow-500 py-12">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10">Video Kota Jambi</h2>
+      <div class="relative pt-9/16">
+        <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="bg-green-900 text-yellow-500 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Frequently Asked Questions (FAQ)</h2>
+
+      <div class="space-y-6">
+        <!-- FAQ Item 1 -->
+        <div class="bg-green-800 rounded-lg shadow-lg">
+          <button class="w-full text-left px-6 py-4 text-2xl font-bold mb-2 bg-green-800 text-yellow-500 hover:bg-green-700 focus:outline-none flex justify-between items-center" onclick="toggleFAQ(1)">
+            <span>Apa saja tempat wisata yang harus dikunjungi di Kota Jambi?</span>
+            <span id="icon1" class="transform transition-transform duration-200">
+              <i class="fas fa-plus"></i>
+            </span>
+          </button>
+          <div id="faq1" class="text-lg text-yellow-300 px-6 pb-4 hidden transition-all duration-500 ease-in-out">
+            <p>Beberapa tempat wisata terkenal di Kota Jambi antara lain Danau Kerinci, Taman Hutan Rayap, dan Candi Muaro Jambi.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="bg-green-800 rounded-lg shadow-lg">
+          <button class="w-full text-left px-6 py-4 text-2xl font-bold mb-2 bg-green-800 text-yellow-500 hover:bg-green-700 focus:outline-none flex justify-between items-center" onclick="toggleFAQ(2)">
+            <span>Apa makanan khas yang wajib dicoba di Kota Jambi?</span>
+            <span id="icon2" class="transform transition-transform duration-200">
+              <i class="fas fa-plus"></i>
+            </span>
+          </button>
+          <div id="faq2" class="text-lg text-yellow-300 px-6 pb-4 hidden transition-all duration-500 ease-in-out">
+            <p>Kuliner khas yang wajib dicoba di Kota Jambi antara lain Soto Jambi, Tempoyak, dan Rendang Jambi.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="bg-green-800 rounded-lg shadow-lg">
+          <button class="w-full text-left px-6 py-4 text-2xl font-bold mb-2 bg-green-800 text-yellow-500 hover:bg-green-700 focus:outline-none flex justify-between items-center" onclick="toggleFAQ(3)">
+            <span>Bagaimana cara menuju Kota Jambi?</span>
+            <span id="icon3" class="transform transition-transform duration-200">
+              <i class="fas fa-plus"></i>
+            </span>
+          </button>
+          <div id="faq3" class="text-lg text-yellow-300 px-6 pb-4 hidden transition-all duration-500 ease-in-out">
+            <p>Kota Jambi dapat diakses melalui penerbangan langsung menuju Bandara Sultan Thaha, atau melalui jalur darat dari beberapa kota besar di Sumatra.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript untuk toggle FAQ -->
+  <script>
+    function toggleFAQ(faqNumber) {
+      const faq = document.getElementById(`faq${faqNumber}`);
+      const icon = document.getElementById(`icon${faqNumber}`);
+
+      faq.classList.toggle('hidden');
+
+      // Toggle icon
+      if (faq.classList.contains('hidden')) {
+        icon.innerHTML = '<i class="fas fa-plus"></i>';
+      } else {
+        icon.innerHTML = '<i class="fas fa-minus"></i>';
+      }
+    }
+  </script>
+
+  <!-- Add Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+  <!-- Kontak Section -->
+  <section id="kontak" class="bg-green-800 text-yellow-500 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Kontak Kami</h2>
+
+      <form action="#" method="POST" class="max-w-lg mx-auto bg-green-900 p-8 rounded-lg shadow-lg">
+        <div class="mb-4">
+          <label for="name" class="block text-lg font-semibold mb-2">Nama Lengkap</label>
+          <input type="text" id="name" name="name" class="w-full p-3 bg-green-700 text-yellow-300 rounded-md" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-lg font-semibold mb-2">Email</label>
+          <input type="email" id="email" name="email" class="w-full p-3 bg-green-700 text-yellow-300 rounded-md" required>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-lg font-semibold mb-2">Pesan</label>
+          <textarea id="message" name="message" class="w-full p-3 bg-green-700 text-yellow-300 rounded-md" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="w-full bg-yellow-500 text-green-900 font-semibold py-3 rounded-md hover:bg-yellow-400">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-green-900 text-yellow-500 py-8">
+    <div class="container mx-auto text-center">
+      <p class="text-lg">&copy; 2025 Kota Jambi. All Rights Reserved.</p>
+      <p class="text-sm">Designed with ❤️ by Nabil Vennu Pangestu</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
